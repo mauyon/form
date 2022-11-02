@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scrollspy</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.min.js.js"></script>
+    <script src="js/proper.js"></script>
+    <script src="js/bootstrap.js"></script>
+<style>
+    .navbar{
+        background-color: blue!important;
+    }
+</style>
+</head>
+<body data-spy="scroll" data-target=".navbar">
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <!--Logo-->
+        <a href="" class="navbar-brand">LOGO</a>
+        <!--Toggle Button-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Navbar Links-->
+        <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ml-auto">
+            <li class="navbar-item"><a href="#Home" class="nav-link">Home</a></li>
+            <li class="navbar-item"><a href="#About" class="nav-link">About</a></li>
+            <!--Drowdown
+            <li class="navbar-item dropdown"><a href="#" class="nav-link dropdown-toggle" id="#navdrop" data-toggle="dropdown">Services
+            </a>
+            <div class="dropdown-menu bg-light">
+                <a href="" class="dropdown-item text-dark">
+                    Link 1
+                </a>
+                <a href="" class="dropdown-item">
+                    Link 2
+                </a>
+                <a href="" class="dropdown-item">
+                    Link 3
+                </a>
+            </div>
+            </li>-->
+            <li class="navbar-item"><a href="#Services" class="nav-link">Services</a></li>
+            <li class="navbar-item"><a href="#contact" class="nav-link">Contact Us</a></li>
+        </ul>
+        </div>
+    </nav>
+    <div id="Home" class="container-fluid bg-success" style="padding-top: 70px;">
+        <h1>HOME</h1>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia repudiandae minima perspiciatis! Error ratione illo sint iusto labore maxime magni voluptatibus non possimus. Sunt, unde inventore mollitia in quae facere.</P>
+    </div>
+
+    <div id="About="container-fluid bg-danger style="padding-top: 70px;">
+        <h1>ABOUT US</h1>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia repudiandae minima perspiciatis! Error ratione illo sint iusto labore maxime magni voluptatibus non possimus. Sunt, unde inventore mollitia in quae facere.</P>
+    </div>
+
+    <div id="Services" class="container-fluid bg-dark style="padding-top: 70px;">
+        <h1>SERVICES</h1>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia repudiandae minima perspiciatis! Error ratione illo sint iusto labore maxime magni voluptatibus non possimus. Sunt, unde inventore mollitia in quae facere.</P>
+    </div>
+    <div id="contact" class="container-fluid bg-primary" style="padding-top: 70px;">
+        <h1>CONTACT US</h1>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia repudiandae minima perspiciatis! Error ratione illo sint iusto labore maxime magni voluptatibus non possimus. Sunt, unde inventore mollitia in quae facere.</P>
+    </div>
+</body>
+</html>
